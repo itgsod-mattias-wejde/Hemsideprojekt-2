@@ -8,7 +8,7 @@ body {
 #header {
     height: 100px;
     width: 1200px;
-    background-color: #c95f0a;
+    background-color: #b2530b;
     margin-left: 30px;
     box-shadow: 0px 7px 9px 9px #622f00;
 }
@@ -25,7 +25,7 @@ body {
     width: 1200px;
     bottom: 10px;
     margin: -20px 30px;
-    background-color: #c95f0a;
+    background-color: #b2530b;
     box-shadow: 0px 7px 9px 9px #622f00;
     margin-top: 20px;
 
@@ -34,55 +34,88 @@ body {
 #subheader {
     height: 100px;
     width: 1200px;
-    background-color: #c95f0a;
+    background-color: #b2530b;
     margin-left: 30px;
     margin-top: 40px;
     box-shadow: 0px 7px 9px 9px #622f00;
 }
 
-#menu {
-    background-color: black;
-    height: 61px;
-    width: 1200px;
-    float: left;
-
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(201, 95, 30, 0.20);
+    background: #c95f1e;
 }
 
-#home {
-    width: 299px;
-    height: 98%;
-    background-color: #c95f0a;
-    float: left;
+.menu {
+    width:1000px;
+    margin:0px auto;
 }
 
-#programs {
-    margin-left: 1px;
-    width: 299px;
-    height: 98%;
-    background-color: #c95f0a;
-    float: left;
+.menu li {
+    margin:0px;
+    list-style:none;
 }
 
-#about {
-    margin-left: 1px;
-    width: 299px;
-    height: 98%;
-    background-color: #c95f0a;
-    float: left;
-    font-size: 24px;
-    color: black;
-    font-family: georgia, serif;
-    padding-bottom: -120px;
+.menu a {
+    transition:all linear 0.15s;
+    color: #ebebeb;
 }
 
-#apply {
-    margin-left: 1px;
-    width: 300px;
-    height: 98%;
-    background-color: #c95f0a;
-    float: left;
-    font-size: 32px;
-    color: black;
-    font-family: georgia, serif;
-    padding-bottom: 40px;
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color: #ebebeb;
+}
+
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background: #622f00;
+}
+
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background: #853b00;
+}
+
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background: #9d4b0a;
 }
