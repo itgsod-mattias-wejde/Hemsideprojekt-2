@@ -20,6 +20,13 @@ body {
     padding-top: 20px;
 }
 
+#contact {
+    font-family: georgia, serif;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
 #center {
     height: 950px;
     width: 1200px;
@@ -118,4 +125,8 @@ body {
 
 .sub-menu li a:hover, .sub-menu .current-item a {
     background: #9d4b0a;
+}
+
+h5 {
+    color: black;
 }
