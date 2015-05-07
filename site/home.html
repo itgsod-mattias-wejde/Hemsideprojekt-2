@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="css/style.css"/>
     <meta charset="UTF-8"/>
     <title>The international university of the holy Goat</title>
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//unslider.com/unslider.min.js"></script>
 </head>
 <body background="img/HolyGoat.png">
 
@@ -25,12 +27,25 @@
                             <li><a href="socialstudies.html">Social studies</a></li>
                             <li><a href="economy.html">Economy</a></li>
                             <li><a href="civilenginering.html">Civil Engineering</a></li>
+                            <li><a href="religion.html">Religional Studies</a></li>
                         </ul>
                     </li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Apply</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="banner">
+            <ul>
+                <li>This is a slide.</li>
+                <li>This is another slide.</li>
+                <li>This is a final slide.</li>
+                <script>
+                    $(function() {
+                        $('.banner').unslider();
+                    });
+                </script>
+            </ul>
         </div>
     </div>
     <div id="subheader">
