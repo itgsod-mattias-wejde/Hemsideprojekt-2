@@ -138,8 +138,15 @@ h5 {
 }
 
 
-.banner { position: relative; overflow: auto; }
+.banner {
+    position: relative;
+    overflow: auto;
+}
 
-.banner li { list-style: none; }
+.banner li {
+    list-style: none;
+}
 
-.banner ul li { float: left; }
+.banner ul li {
+    float: left;
+}
