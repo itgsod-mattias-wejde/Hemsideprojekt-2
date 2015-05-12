@@ -52,7 +52,7 @@ body {
     margin-top: 40px;
     box-shadow: 0px 7px 9px 9px #622f00;
 }
-
+/*Here begins the setup for the menu row*/
 .menu-wrap {
     width:100%;
     box-shadow:0px 1px 3px rgba(201, 95, 30, 0.20);
