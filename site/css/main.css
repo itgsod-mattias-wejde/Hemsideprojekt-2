@@ -1,15 +1,16 @@
 html {
     margin: 0px;
     padding: 0px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 body {
     margin: 0px;
     padding: 0px;
+    /*--This four bits will make the code work on several webbrowsers*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .Body_Content {
